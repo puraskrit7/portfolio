@@ -18,7 +18,7 @@ function About({ aboutRef }) {
               <li>
                 <h3 className="company-header">Accenture</h3>
                 <p className="company-info">
-                  Application Development Analyst - UI <br />
+                  Product Engineering Senior Analyst - UI <br />
                   From February 2021
                 </p>
               </li>
