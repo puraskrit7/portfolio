@@ -1,0 +1,142 @@
+/* === BASE HEADER === */
+.header {
+  background: #1e1e1e;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* === LOGO === */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo img {
+  border-radius: 50%;
+}
+
+.name {
+  font-weight: 600;
+}
+
+.title {
+  font-size: 0.8rem;
+  color: #aaaaaa;
+}
+
+/* === NAV LINKS === */
+.nav-links {
+  display: flex;
+  gap: 24px;
+}
+
+.nav-links a {
+  font-size: 0.95rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* === CTA DESKTOP === */
+.say-hello-btn {
+  background: #f4f436;
+  padding: 10px 16px;
+  color: #000;
+  font-weight: 600;
+  border-radius: 8px;
+  margin-left: 20px;
+  transition: 0.3s;
+}
+
+.say-hello-btn:hover {
+  opacity: 0.9;
+}
+
+/* === HAMBURGER ICON === */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  background: #fff;
+  height: 2px;
+  width: 20px;
+  border-radius: 1px;
+}
+
+/* === MOBILE MENU (Side Drawer) === */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 260px;
+  height: 100vh;
+  background-color: #1e1e1e;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.4);
+  padding: 32px 24px;
+  transform: translateX(100%);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  z-index: 9999;
+}
+
+.mobile-menu.show {
+  transform: translateX(0);
+}
+
+.mobile-menu a {
+  color: #fff;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.say-hello-btn-mobile {
+  background: #f4f436;
+  padding: 10px 16px;
+  color: #000;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+/* === CLOSE BUTTON === */
+.close-drawer {
+  font-size: 1.6rem;
+  color: #ccc;
+  align-self: flex-end;
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+/* === BACKDROP === */
+.mobile-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+}
+
+/* === MEDIA QUERIES === */
+@media (max-width: 768px) {
+  .nav-links,
+  .say-hello-btn {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

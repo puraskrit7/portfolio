@@ -1,92 +1,27 @@
-.App {
-    background-color: #ffffff;
-  }
-  
-  .App-logo {
-    height: 10vmin;
-    pointer-events: none;
-  }
-  
-  .dotColorTheme {
-    color: #23a6d5;
-  }
-  
-  .greeting {
-    font-size: 1em;
-  }
-  
-  .profile {
-    font-size: 0.5em;
-  }
-  
-  .animate-character {
-    background-size: auto auto;
-    background-clip: border-box;
-    background-size: 200% auto;
-    color: #000000;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    display: inline-block;
-    background-image: linear-gradient(-45deg, #23a6d5, #290092, #23a6d5, #23d5ab);
-    animation: gradient 15s ease infinite;
-  }
-  
-  @keyframes gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
-  .portfolio-header {
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(3.5vw + 2vmin);
-    color: #000000;
-    background-color: #ffffff;
-  }
-  
-  .about-header {
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(8vw + 2vmin);
-    color: #000000;
-    background-color: #ffffff;
-  }
-  
-  .projects-header {
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: calc(8vw + 2vmin);
-    color: #000000;
-    background-color: #ffffff;
-  }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
+html {
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
