@@ -2,9 +2,8 @@ import "./Hero.css";
 
 function Hero() {
   return (
-    <section className="hero" id="home">
-      <div className="hero-content" data-aos="fade-up">
-        <p className="available">AVAILABLE FOR FREELANCE</p>
+    <section className="hero" id="home" data-aos="fade-up">
+      <div className="hero-content">
         <h1>
           HEY, I'M PURASKRIT. <br /> A SENIOR FRONTEND DEVELOPER
         </h1>
