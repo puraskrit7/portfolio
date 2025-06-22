@@ -28,7 +28,7 @@ function Header() {
             />
             <div>
               <div className="name">Puraskrit</div>
-              <div className="title">Developer</div>
+              <div className="title">Sr. Frontend Developer</div>
             </div>
           </div>
 

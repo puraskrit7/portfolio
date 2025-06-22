@@ -1,32 +1,59 @@
-import './Footer.css';
-import { FaGithub, FaLinkedin, FaEnvelope, FaFileDownload } from 'react-icons/fa';
+import "./Footer.css";
+import {
+  FaGithub,
+  FaLinkedin,
+  FaEnvelope,
+  FaFileDownload,
+} from "react-icons/fa";
 
 function Footer() {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <a href="mailto:puraskrit7@gmail.com" className="footer-link" target="_blank" rel="noopener noreferrer">
+        <a
+          href="mailto:puraskrit7@gmail.com"
+          className="footer-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaEnvelope />
           <span>puraskritsinha3@gmail.com</span>
         </a>
 
-        <a href="https://github.com/puraskrit7" className="footer-link" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://github.com/puraskrit7"
+          className="footer-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaGithub />
           <span>GitHub</span>
         </a>
 
-        <a href="https://www.linkedin.com/in/puraskrit7" className="footer-link" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://www.linkedin.com/in/puraskrit7"
+          className="footer-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaLinkedin />
           <span>LinkedIn</span>
         </a>
 
-        <a href="/PURASKRIT_Resume.pdf" className="footer-link" target="_blank" rel="noopener noreferrer">
+        <a
+          href="https://drive.google.com/uc?export=download&id=1r_Y0_Lj9kKYUDWhMgy4k2Fj7-KJAifnk"
+          className="footer-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaFileDownload />
           <span>Resume</span>
         </a>
       </div>
 
-      <p className="footer-credit">© {new Date().getFullYear()} Puraskrit. All rights reserved.</p>
+      <p className="footer-credit">
+        © {new Date().getFullYear()} Puraskrit. All rights reserved.
+      </p>
     </footer>
   );
 }

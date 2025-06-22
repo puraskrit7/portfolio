@@ -6,7 +6,7 @@ function Hero() {
       <div className="hero-content" data-aos="fade-up">
         <p className="available">AVAILABLE FOR FREELANCE</p>
         <h1>
-          HEY, I'M PURASKRIT. <br /> A CREATIVE DEVELOPER
+          HEY, I'M PURASKRIT. <br /> A SENIOR FRONTEND DEVELOPER
         </h1>
         <div className="skills">
           <span>DESIGN</span> • <span>DEVELOPMENT</span> • <span>REACT</span>

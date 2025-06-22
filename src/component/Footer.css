@@ -35,4 +35,17 @@
     font-size: 0.85rem;
     color: #666;
   }
+  .resume-btn {
+    background: #f4f436;
+    color: #000;
+    padding: 10px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.3s ease;
+  }
+  
+  .resume-btn:hover {
+    opacity: 0.9;
+  }
   

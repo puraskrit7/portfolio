@@ -72,3 +72,43 @@
   color: #ccc;
   cursor: pointer;
 }
+
+/* ✅ Success message style */
+.success-message {
+  text-align: center;
+  padding: 24px;
+  color: #4caf50;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.success-icon {
+  font-size: 2rem;
+  margin-bottom: 12px;
+  color: #4caf50;
+}
+
+/* ✅ Button when disabled (during loading) */
+.modal-form button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* ✅ Loader spinner */
+.loader {
+  width: 18px;
+  height: 18px;
+  border: 3px solid #fff;
+  border-top: 3px solid #1e1e1e;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin: 0 auto;
+  display: block;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
