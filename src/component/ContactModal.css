@@ -88,13 +88,11 @@
   color: #4caf50;
 }
 
-/* ✅ Button when disabled (during loading) */
 .modal-form button[disabled] {
   opacity: 0.6;
   cursor: not-allowed;
 }
 
-/* ✅ Loader spinner */
 .loader {
   width: 18px;
   height: 18px;

@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import emailjs from '@emailjs/browser';
+// import emailjs from '@emailjs/browser';
 import './ContactModal.css';
 import { FaTimes, FaCheckCircle } from 'react-icons/fa';
 

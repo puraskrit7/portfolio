@@ -1,4 +1,3 @@
-/* === BASE HEADER === */
 .header {
   background: #1e1e1e;
   padding: 20px 0;
@@ -13,7 +12,6 @@
   justify-content: space-between;
 }
 
-/* === LOGO === */
 .logo {
   display: flex;
   align-items: center;
@@ -33,7 +31,6 @@
   color: #aaaaaa;
 }
 
-/* === NAV LINKS === */
 .nav-links {
   display: flex;
   gap: 24px;
@@ -45,7 +42,6 @@
   font-weight: 500;
 }
 
-/* === CTA DESKTOP === */
 .say-hello-btn {
   background: #f4f436;
   padding: 10px 16px;
@@ -60,7 +56,6 @@
   opacity: 0.9;
 }
 
-/* === HAMBURGER ICON === */
 .hamburger {
   display: none;
   flex-direction: column;
@@ -75,7 +70,6 @@
   border-radius: 1px;
 }
 
-/* === MOBILE MENU (Side Drawer) === */
 .mobile-menu {
   position: fixed;
   top: 0;
@@ -112,7 +106,6 @@
   transition: 0.3s;
 }
 
-/* === CLOSE BUTTON === */
 .close-drawer {
   font-size: 1.6rem;
   color: #ccc;
@@ -121,7 +114,6 @@
   cursor: pointer;
 }
 
-/* === BACKDROP === */
 .mobile-backdrop {
   position: fixed;
   inset: 0;
@@ -129,7 +121,6 @@
   z-index: 999;
 }
 
-/* === MEDIA QUERIES === */
 @media (max-width: 768px) {
   .nav-links,
   .say-hello-btn {
