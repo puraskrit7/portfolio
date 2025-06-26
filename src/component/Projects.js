@@ -16,6 +16,26 @@ const projects = [
     desc: 'Star Wars Explorer built with SWAPI.',
     link: 'https://github.com/puraskrit7/starflix',
   },
+  {
+    title: 'Estate Agency',
+    desc: 'Get property details on your finger tip with the help of agents',
+    link: 'https://github.com/puraskrit7/Estate_Agency',
+  },
+  {
+    title: 'Chat Application',
+    desc: 'Connect one to one and chat with each other',
+    link: 'https://github.com/puraskrit7/Chat_Application'
+  },
+  {
+    title: 'Pizzeria',
+    desc: 'Buy Pizza online, you can add your favourite toppings too',
+    link: 'https://github.com/puraskrit7/React_Pizzeria'
+  },
+  {
+    title: 'Demo Project-(save details in excel file)',
+    desc: 'Demo Project for storing data locally on your excel file',
+    link: 'https://github.com/puraskrit7/Excel-data-fetch-with-React-main'
+  }
 ];
 
 function Projects() {
