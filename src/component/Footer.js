@@ -41,7 +41,7 @@ function Footer() {
         </a>
 
         <a
-          href="https://drive.google.com/uc?export=download&id=1tggtQEz1kOgc2PhWQJFRgsKHZYtNxfSR"
+          href="https://drive.google.com/uc?export=download&id=13xkj8PzMthtn1Evma_4rVbnqwiupvDDe"
           className="footer-link"
           target="_blank"
           rel="noopener noreferrer"
