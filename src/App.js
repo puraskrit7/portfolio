@@ -15,7 +15,7 @@ function App() {
   }, []);
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <Hero />
       <About /> <Projects /><Footer /><ScrollToTop />
     </>
