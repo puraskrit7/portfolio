@@ -1,0 +1,120 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        bg: 'rgb(var(--c-bg) / <alpha-value>)',
+        panel: 'rgb(var(--c-panel) / <alpha-value>)',
+        panel2: 'rgb(var(--c-panel2) / <alpha-value>)',
+        border: 'rgb(var(--c-border) / <alpha-value>)',
+        border2: 'rgb(var(--c-border2) / <alpha-value>)',
+        ink: 'rgb(var(--c-ink) / <alpha-value>)',
+        muted: 'rgb(var(--c-muted) / <alpha-value>)',
+        faint: 'rgb(var(--c-faint) / <alpha-value>)',
+        signal: 'rgb(var(--c-signal) / <alpha-value>)',
+        signal2: 'rgb(var(--c-signal2) / <alpha-value>)',
+        crimson: 'rgb(var(--c-crimson) / <alpha-value>)',
+      },
+      fontFamily: {
+        display: ['"Space Grotesk"', 'sans-serif'],
+        body: ['"Inter"', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'monospace'],
+      },
+      keyframes: {
+        blink: {
+          '0%, 100%': { opacity: 1 },
+          '50%': { opacity: 0.25 },
+        },
+        scan: {
+          '0%': { transform: 'translateY(-100%)' },
+          '100%': { transform: 'translateY(100%)' },
+        },
+        'spin-slow': {
+          '0%': { transform: 'rotate(0deg)' },
+          '100%': { transform: 'rotate(360deg)' },
+        },
+        'spin-rev': {
+          '0%': { transform: 'rotate(360deg)' },
+          '100%': { transform: 'rotate(0deg)' },
+        },
+        flicker: {
+          '0%, 100%': { opacity: 1 },
+          '45%': { opacity: 0.75 },
+          '50%': { opacity: 0.4 },
+          '55%': { opacity: 0.8 },
+        },
+        ember: {
+          '0%': { transform: 'translateY(0) scale(1)', opacity: 0.7 },
+          '100%': { transform: 'translateY(-140px) scale(0.3)', opacity: 0 },
+        },
+        'arc-flicker': {
+          '0%, 100%': { opacity: 0 },
+          '2%': { opacity: 0.9 },
+          '4%': { opacity: 0.1 },
+          '6%': { opacity: 0.8 },
+          '9%': { opacity: 0 },
+          '45%': { opacity: 0 },
+          '47%': { opacity: 0.7 },
+          '50%': { opacity: 0 },
+        },
+        'orb-pulse': {
+          '0%, 100%': { transform: 'scale(1)', opacity: 0.5 },
+          '50%': { transform: 'scale(1.3)', opacity: 0.85 },
+        },
+        'electric-pulse': {
+          '0%, 100%': { opacity: 1, filter: 'brightness(1)' },
+          '50%': { opacity: 0.65, filter: 'brightness(1.6)' },
+        },
+        'thunder-flicker': {
+          '0%, 100%': { opacity: 1 },
+          '4%': { opacity: 0.3 },
+          '8%': { opacity: 1 },
+          '10%': { opacity: 0.15 },
+          '13%': { opacity: 0.9 },
+          '45%': { opacity: 1 },
+          '47%': { opacity: 0.25 },
+          '50%': { opacity: 1 },
+          '74%': { opacity: 1 },
+          '76%': { opacity: 0.4 },
+          '79%': { opacity: 0.95 },
+        },
+        'wave-drift': {
+          '0%, 100%': { transform: 'translateX(0)' },
+          '50%': { transform: 'translateX(-30px)' },
+        },
+        'hat-bob': {
+          '0%, 100%': { transform: 'translateY(0) rotate(-2deg)' },
+          '50%': { transform: 'translateY(-14px) rotate(2deg)' },
+        },
+        'bubble-rise': {
+          '0%': { transform: 'translateY(0) translateX(0) scale(0.8)', opacity: 0 },
+          '10%': { opacity: 0.8 },
+          '100%': { transform: 'translateY(-260px) translateX(12px) scale(1.1)', opacity: 0 },
+        },
+        'sparkle-twinkle': {
+          '0%, 100%': { opacity: 0, transform: 'scale(0.4) translateY(0)' },
+          '50%': { opacity: 0.9, transform: 'scale(1) translateY(-16px)' },
+        },
+      },
+      animation: {
+        blink: 'blink 1.8s ease-in-out infinite',
+        scan: 'scan 6s linear infinite',
+        'spin-slow': 'spin-slow 8s linear infinite',
+        'spin-slower': 'spin-slow 14s linear infinite',
+        'spin-rev-slow': 'spin-rev 10s linear infinite',
+        flicker: 'flicker 2.4s ease-in-out infinite',
+        ember: 'ember 3s ease-in infinite',
+        'arc-flicker': 'arc-flicker 5s ease-in-out infinite',
+        'orb-pulse': 'orb-pulse 5s ease-in-out infinite',
+        'electric-pulse': 'electric-pulse 1.4s ease-in-out infinite',
+        'thunder-flicker': 'thunder-flicker 3.4s ease-in-out infinite',
+        'wave-drift': 'wave-drift 8s ease-in-out infinite',
+        'hat-bob': 'hat-bob 6s ease-in-out infinite',
+        'bubble-rise': 'bubble-rise 7s ease-in infinite',
+        'sparkle-twinkle': 'sparkle-twinkle 5s ease-in-out infinite',
+      },
+    },
+  },
+  plugins: [],
+}

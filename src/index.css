@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---------- theme variables (RGB components, no commas, for Tailwind's rgb(var(..)/<alpha>) pattern) ---------- */
+
+:root,
+[data-theme='ember'] {
+  --c-bg: 12 10 8;
+  --c-panel: 23 19 16;
+  --c-panel2: 29 23 18;
+  --c-border: 42 33 25;
+  --c-border2: 58 44 31;
+  --c-ink: 244 233 216;
+  --c-muted: 166 149 126;
+  --c-faint: 107 93 76;
+  --c-signal: 255 122 26;
+  --c-signal2: 255 179 71;
+  --c-crimson: 225 54 43;
+}
+
+[data-theme='tide'] {
+  --c-bg: 7 20 26;
+  --c-panel: 12 32 41;
+  --c-panel2: 15 40 51;
+  --c-border: 22 56 70;
+  --c-border2: 32 74 92;
+  --c-ink: 226 244 242;
+  --c-muted: 137 181 187;
+  --c-faint: 88 130 137;
+  --c-signal: 45 212 191;
+  --c-signal2: 94 234 212;
+  --c-crimson: 245 196 81;
+}
+
+[data-theme='arcane'] {
+  --c-bg: 13 10 20;
+  --c-panel: 23 17 31;
+  --c-panel2: 30 23 41;
+  --c-border: 44 33 64;
+  --c-border2: 61 46 86;
+  --c-ink: 237 230 245;
+  --c-muted: 167 151 194;
+  --c-faint: 110 95 140;
+  --c-signal: 139 92 246;
+  --c-signal2: 183 148 246;
+  --c-crimson: 52 211 153;
+}
+
+body {
+  margin: 0;
+  background-color: rgb(var(--c-bg));
+  color: rgb(var(--c-ink));
+  font-family: 'Inter', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body, body * {
+  transition-property: background-color, border-color, color, fill, stroke;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+
+::selection {
+  background: rgb(var(--c-signal));
+  color: rgb(var(--c-bg));
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: rgb(var(--c-bg));
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--c-border));
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--c-border2));
+}
+
+/* the profile card's own internal scroll — fully hidden scrollbar */
+.card-scroll::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.card-scroll {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  html.custom-cursor,
+  html.custom-cursor a,
+  html.custom-cursor button {
+    cursor: none;
+  }
+}
+
+.ember-particle {
+  position: absolute;
+  bottom: 0;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgb(var(--c-signal2)) 0%, rgb(var(--c-signal)) 60%, transparent 100%);
+  animation: ember 3s ease-in infinite;
+}
+
+.bubble-particle {
+  position: absolute;
+  bottom: 0;
+  border-radius: 999px;
+  border: 1px solid rgb(var(--c-ink) / 0.35);
+  background: radial-gradient(circle at 35% 30%, rgb(var(--c-ink) / 0.25), transparent 70%);
+  animation: bubble-rise 7s ease-in infinite;
+}
+
+.sparkle-particle {
+  position: absolute;
+  background: rgb(var(--c-signal2));
+  clip-path: polygon(50% 0%, 62% 38%, 100% 50%, 62% 62%, 50% 100%, 38% 62%, 0% 50%, 38% 38%);
+  animation: sparkle-twinkle 5s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
