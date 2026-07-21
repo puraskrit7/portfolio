@@ -29,9 +29,7 @@ export default function IdentityNode() {
             brick
             className="overflow-hidden rounded-2xl border border-border bg-panel/80 shadow-2xl shadow-black/40 backdrop-blur"
           >
-            <img
-              src="/puraskrit.png"
-              alt={profile.name}
+           <img src={`${import.meta.env.BASE_URL}puraskrit.png`} alt="Puraskrit"
               className="aspect-[4/3.4] w-full object-cover"
             />
 
